@@ -57,3 +57,9 @@ a82fd95db10ff25dfad39f07372ebe37|file:///home/bohn/.config/nvim/init.vim|350|28|
 	dark
 eca056751902867c23c1046788489fc6|file:///home/bohn/.local/app/clash-for-linux-master/.env|2|19|v|sh
 	https://mojie.app/api/v1/client/subscribe?token=7b9f2d4c350b0dd664c5d30a83ed3f3c
+7d97481b1fe66f4b51db90da7e794d9f|file:///home/bohn/.config/.gitignore|3|8|v|gitignore
+	profile
+159c57631ebea6ebfcb4ae474ae8fb9b|file:///home/bohn/.config/.gitignore|3|5|V|gitignore
+	fcitx5/
+3cbe6975146eb1c81e38bcde80ecd136|file:///home/bohn/.config/.gitignore|3|5|V|gitignore
+	ibus/

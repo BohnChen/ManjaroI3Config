@@ -1,3 +1,5 @@
+/home/bohn/.config/.gitignore
+/home/bohn/.config/fcitx5/profile
 /home/bohn/.i3/config
 /home/bohn/.local/app/clash-for-linux-master/.env
 /home/bohn/.local/app/clash-for-linux-master/start.sh
