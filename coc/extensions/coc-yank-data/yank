@@ -1,0 +1,59 @@
+65d2e57460fc585328189d4a4f319080|file:///home/bohn/Downloads/clash-for-linux-master/README.md|22|110|v|markdown
+	https://github.com/wanhebin/clash-for-linux/issues
+c5802ada11c7815090d685797df97ace|file:///home/bohn/Downloads/clash-for-linux-master/README.md|148|76|v|markdown
+	http://192.168.0.1:9090/ui
+	
+619043c6341fc5436f33dd096f12fae6|file:///home/bohn/.bashrc|119|40|V|sh
+	export http_proxy='http://127.0.0.1:7890'
+f1f17934834ae2613699701054ef9684|file:///home/bohn/Downloads/clash-for-linux-master/conf/config.yaml|20|23|v|yaml
+	0.0.0.0
+75b371f31ee3e2a2f937902b02bea41a|file:///home/bohn/.bashrc|120|11|V|sh
+	export https_proxy='http://127.0.0.1:7890'
+dda8264e059622f188fdb425ed126544|file:///home/bohn/.bashrc|121|8|v|sh
+	https_proxy
+80791b3ae7002cb88c246876d9faa8f8|file:///home/bohn/.bashrc|121|19|v|sh
+	http
+91b004bce2df28385041678b03675fde|file:///home/bohn/Downloads/clash-for-linux-master/start.sh|182|1|V|sh
+	#echo -e "Clash Dashboard 访问地址: http://<ip>:9090/ui"
+9af14dcc57011adf6a2c6d915bd86663|file:///etc/systemd/user/default.target.wants/clash.service|11|1|V|systemd
+	ExecStopPre=proxy_off
+ed18ad003a2b8070a18d2e87cbb89c70|file:///etc/systemd/system/clash.service|1|1|v|systemd
+	[Unit]
+544504fd6c3c32eb4f439e7b9e0a4932|file:///home/bohn/.i3/config|290|1|V|i3config
+	exec --no-startup-id /home/bohn/.screenlayout/StartXrandr.sh
+c256aeeb9f088bad709bdda20287c099|file:///home/bohn/.i3/config|292|34|v|i3config
+	screenlayout
+7a4246108524b6614c6612483631bdaf|file:///home/bohn/.i3/config|292|40|v|i3config
+	StartXrandr
+3d5c1251f8134064ed815dfabf4784e2|file:///home/bohn/.i3/config|291|1|V|i3config
+	# clash
+bb89dbf7d7540eeb270d91abfd580008|file:///home/bohn/.i3/config|293|3|v|i3config
+	clash
+b5e9ae13524f026b702a9a39eacdced6|file:///home/bohn/.i3/config|294|43|v|i3config
+	i3lock
+70dda5dfb8053dc6d1c492574bce9bfd|file:///home/bohn/.i3/config|294|42|v|i3config
+	color
+5c586471f977a43a1114cc10d76123e8|file:///home/bohn/.i3/config|294|1|V|i3config
+	bindsym $mod+Shift+l exec --no-startup-id i3lock
+fca677c73d28ff5ac4d7c9f2d4da557e|file:///home/bohn/.i3/config|279|49|V|i3config
+	exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+348c42a7a00bcc07bb0957f6dae9e4a6|file:///home/bohn/.i3/config|279|42|v|i3config
+	sleep 
+1c67eb37fab4eed7a8421e6a0d9fee53|file:///home/bohn/.i3/config|300|49|v|i3config
+	blurlock
+5f1926ea6aca24d14111be4a39010f56|file:///home/bohn/.i3/config|300|1|V|i3config
+	#exec --no-startup-id xautolock -time 10 -locker blurlock
+4e3988cc4c3491014afb7c09c9583f31|file:///home/bohn/.i3/config|301|49|v|i3config
+	i3lock-color
+c092dc04b77164156e3ba29d57adeeb7|file:///home/bohn/.i3/config|301|49|v|i3config
+	xsecurelock
+965c624cbd2762f3856d0904c3453898|file:///home/bohn/.i3/config|275|37|V|i3config
+	bindsym $mod+9 exec --no-startup-id xsecurelock
+77689a552fb6083a6c0fcd48debc9a7e|file:///home/bohn/.config/nvim/init.vim|347|15|V|vim
+	let g:mkdp_theme = 'dark'
+bd34845a818162e6ad5e628a55983907|file:///home/bohn/.config/nvim/init.vim|350|7|v|vim
+	mkdp_theme
+a82fd95db10ff25dfad39f07372ebe37|file:///home/bohn/.config/nvim/init.vim|350|28|v|vim
+	dark
+eca056751902867c23c1046788489fc6|file:///home/bohn/.local/app/clash-for-linux-master/.env|2|19|v|sh
+	https://mojie.app/api/v1/client/subscribe?token=7b9f2d4c350b0dd664c5d30a83ed3f3c
