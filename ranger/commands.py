@@ -4,6 +4,7 @@ from ranger.core.loader import CommandLoader
 
 
 class paste_as_root(Command):
+
     def execute(self):
         if self.fm.do_cut:
             self.fm.execute_console('shell sudo mv %c .')
@@ -12,6 +13,7 @@ class paste_as_root(Command):
 
 
 class toggleVCS(Command):
+
     def execute(self):
         self.fm.execute_console("set vcs_aware!")
         self.fm.execute_console("reload_cwd")
@@ -23,6 +25,7 @@ class mkcd(Command):
 
     Creates a directory with the name <dirname> and enters it.
     """
+
     def execute(self):
         from os.path import join, expanduser, lexists
         from os import makedirs
@@ -60,17 +63,18 @@ class fzf_select(Command):
 
     See: https://github.com/junegunn/fzf
     """
+
     def execute(self):
         import subprocess
         import os.path
         if self.quantifier:
             # match only directories
-            command = "find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
+            command = r"find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
             -o -type d -print 2> /dev/null | sed 1d | cut -b3- | fzf +m"
 
         else:
             # match files and directories
-            command = "find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
+            command = r"find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
             -o -print 2> /dev/null | sed 1d | cut -b3- | fzf +m"
 
         fzf = self.fm.execute_command(command,
@@ -86,6 +90,7 @@ class fzf_select(Command):
 
 
 class compress(Command):
+
     def execute(self):
         """ Compress marked files to current directory """
         cwd = self.fm.thisdir
@@ -120,6 +125,7 @@ class compress(Command):
 
 
 class extracthere(Command):
+
     def execute(self):
         """ Extract copied files to current directory """
         copied_files = tuple(self.fm.copy_buffer)
